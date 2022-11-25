@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase database</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body class=" bg-dark text-info w-100">
+    <div style="text-align: right">
+        <input type="button" value="logout" class="btn btn-outline-info m-3" onclick="logout()">
+    </div>
+    <h1 class="p-3 text-center border-bottom border-warning">Mustafa's To-do App</h1>
+<h1 class="text-center p-3">Hello <span class="text-warning">User !</span>  </h1>
+    <div class="main">
+    <input class="rounded border-warning p-3" type="text" placeholder="Enter the Text you want : " id="task">
+    <button  class="btn btn-outline-success m-2" onclick="sendData()">Proceed</button>
+    <button  class="btn btn-outline-info m-2"onclick="getData()">Recieve Data</button>
+    <button class="btn btn-outline-danger m-2" onclick="removeAll()">Remove Data</button>
+
+</div>
+
+<div class="empty">
+    <ul id="emptyDiv" class=" m-3"></ul>
+</div>
+    
+</body>
+<script type="module" src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+<script type="module" src="secondapp.js"></script>
+</html>
